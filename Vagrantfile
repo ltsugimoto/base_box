@@ -9,6 +9,7 @@ Vagrant.configure("2") do |config|
   config.vm.define 'base' do |v|
     v.vm.network "private_network", ip: "192.168.33.20"
     v.vm.synced_folder "./work", "/home/vagrant/work"
+    v.vm.synced_folder "./sample", "/home/vagrant/sample"
   end
 
   config.ssh.forward_agent = true
