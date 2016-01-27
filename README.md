@@ -94,6 +94,9 @@ $ bundle install --path ~/.gem_bowl/exprails
 
 # とりいそぎDBだけ作成
 $ bin/rake db:create
+
+# サーバー起動！
+$ bin/rails s
 ```
 
 ## 5) アクセスしてみよう
