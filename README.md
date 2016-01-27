@@ -62,6 +62,7 @@ $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 # install ruby - takes a bit of time
+# "-bash: rbenv: コマンドが見つかりません" とかが出たら再ログインしてください
 $ rbenv install 2.3.0
 $ rbenv global 2.3.0
 
