@@ -73,7 +73,7 @@ $ gem install rails
 ## 3) railsのレポジトリをとりあえず作る
 ```
 # まずはrailsのアプリ作るところから
-$ cd work
+$ cd /home/vagrant/work
 $ rails new exprails -d mysql -B
 
 # さっそくgit管理します
