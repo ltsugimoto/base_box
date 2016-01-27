@@ -66,8 +66,8 @@ $ rbenv install 2.3.0
 $ rbenv global 2.3.0
 
 # とりあえず
-$ gem install bundler
-$ gem install rails
+$ gem install bundler --no-rdoc --no-ri
+$ gem install rails --no-rdoc --no-ri
 ```
 
 ## 3) railsのレポジトリをとりあえず作る
