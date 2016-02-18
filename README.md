@@ -62,18 +62,19 @@ $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 # install ruby - takes a bit of time
-$ rbenv 2.3.0
+# "-bash: rbenv: コマンドが見つかりません" とかが出たら再ログインしてください
+$ rbenv install 2.3.0
 $ rbenv global 2.3.0
 
 # とりあえず
-$ gem install bundler
-$ gem install rails
+$ gem install bundler --no-rdoc --no-ri
+$ gem install rails --no-rdoc --no-ri
 ```
 
 ## 3) railsのレポジトリをとりあえず作る
 ```
 # まずはrailsのアプリ作るところから
-$ cd work
+$ cd /home/vagrant/work
 $ rails new exprails -d mysql -B
 
 # さっそくgit管理します
@@ -93,6 +94,9 @@ $ bundle install --path ~/.gem_bowl/exprails
 
 # とりいそぎDBだけ作成
 $ bin/rake db:create
+
+# サーバー起動！
+$ bin/rails s
 ```
 
 ## 5) アクセスしてみよう
